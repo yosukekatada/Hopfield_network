@@ -6,16 +6,15 @@ This Python code is just a simple implementaion of discrete Hopfield Network (ht
 Discrete Hopfield Network can learn patterns and remember (recover) the patterns when the network feeds those with noises.
 
 ## Example (What the code do) ##
-For example, you input a neat picture and trained the network (My code automatically transform RGB Jpeg into black-white picture). 
+For example, you input a neat picture like this and make the network to memorize the pattern (My code automatically transform RGB Jpeg into black-white picture). 
 
 ![IMAGE](train_pics/yosuke.jpg)
 
-After that, if you put the slightly different picture like this into the network, the network remembers the former neat pic and remember it.
-
+After that, if you put the picture like this into the network.
 ![IMAGE](test_pics/yosuke_test.jpg)
 
 
-Finally, the network remembered the original one and striped off the sunglasses.
+The network can strip off the sunglasses because the network remembers the former picture.
 
 ![IMAGE](after_1.jpeg)
 
