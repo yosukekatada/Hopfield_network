@@ -41,10 +41,10 @@ Also, Here is the way to run my code.
 - Theta is the threshold of the neuron activation.
 - Time is a parameter telling the steps of remembering the learned pictures. As the number of the steps increases, the remembered picture is more accurate.
 - size is the picture size in pixel. If you put a pic with different sizes, the code resize it.
-- threshold is the cutoff threshold to binarize 8 byte (0 to 255) brightness.
+- threshold is the cutoff threshold to binarize 1 byte (0 to 255) brightness.
 - current_path should be current working folder path (usual way is os.getcwd())
 
-Here is main code.
+After you download all the files in this repository, please run "hopfield.py". Here is the main code.
 ```
 #First, you can create a list of input file path
 current_path = os.getcwd()
