@@ -7,13 +7,16 @@ Discrete Hopfield Network can learn patterns and remember (recover) the patterns
 
 ## Example (What the code do) ##
 For example, you input a neat picture and trained the network (My code automatically transform RGB Jpeg into black-white picture). 
+
 ![IMAGE](train_pics/yosuke.jpg)
 
 After that, if you put the slightly different picture like this into the network, the network remembers the former neat pic and remember it.
+
 ![IMAGE](test_pics/yosuke_test.jpg)
 
 
 Finally, the network remembered the original one and striped off the sunglasses.
+
 ![IMAGE](after_1.jpeg)
 
 
