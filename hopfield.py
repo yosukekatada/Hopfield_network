@@ -1,3 +1,6 @@
+#This is the sample code of discrere hopfield network
+
+
 import numpy as np
 import random
 import Image
@@ -112,7 +115,7 @@ def hopfield(train_files, test_files,theta=0.5, time=1000, size=(100,100),thresh
         y_vec_after = update(w=w,y_vec=y_vec,theta=theta,time=time)
         y_vec_after = y_vec_after.reshape(oshape)
         if current_path is not None:
-            outfile = current_path+"/after_jpeg/after_"+str(counter)+".jpeg"
+            outfile = current_path+"/after_"+str(counter)+".jpeg"
             array2img(y_vec_after,outFile=outfile)
         else:
             after_img = array2img(y_vec_after,outFile=None)
@@ -121,6 +124,7 @@ def hopfield(train_files, test_files,theta=0.5, time=1000, size=(100,100),thresh
 
 
 #Main
+#First, you can create a list of input file path
 current_path = os.getcwd()
 train_paths = []
 path = current_path+"/train_pics/"
@@ -128,10 +132,12 @@ for i in os.listdir(path):
     if re.match(r'[0-9a-zA-Z-]*.jp[e]*g',i):
         train_paths.append(path+i)
 
+#Second, you can create a list of sungallses file path
 test_paths = []
 path = current_path+"/test_pics/"
 for i in os.listdir(path):
     if re.match(r'[0-9a-zA-Z-_]*.jp[e]*g',i):
         test_paths.append(path+i)
 
-hopfield(train_files=train_paths, test_files=test_paths, theta=0.5,time=50000,size=(100,100),threshold=80, current_path = None)
+#Hopfield network starts!
+hopfield(train_files=train_paths, test_files=test_paths, theta=0.5,time=20000,size=(100,100),threshold=60, current_path = current_path)
