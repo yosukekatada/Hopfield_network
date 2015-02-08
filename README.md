@@ -11,6 +11,7 @@ For example, you input a neat picture like this and make the network to memorize
 ![IMAGE](train_pics/yosuke.jpg)
 
 After that, if you put the picture like this into the network.
+
 ![IMAGE](test_pics/yosuke_test.jpg)
 
 
